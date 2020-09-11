@@ -1,0 +1,59 @@
+
+{% extends "blog/base.html" %}
+
+{% block content_primary %}
+{% load static %}
+      <div class="jumbotron">
+        <div class="container">
+            <img src="{% static "blog/images/back.jpg" %}" class="img-fluid">
+            <p class="lead"> This insures the detail founding of something and everything. </p>
+        </div>
+      </div>
+
+
+            <h3 style="center"> Install Ubuntu on in a Virtual Box </h3>
+            <p> Here, we are going to see how we can use ubuntu on a virtual machine. </p>
+            <h4> <strong>Here are some few things we need before starting.</strong> </h4>
+            <ul>
+                <li><a href="https://download.virtualbox.org/virtualbox/6.1.12/VirtualBox-6.1.12-139181-Win.exe">Virtual Box </a></li>
+                <li><a href="https://releases.ubuntu.com/18.04.5/ubuntu-18.04.5-desktop-amd64.iso"> Ubuntu iso </a></li>
+                <li> And a lot more patience.... </li>
+            </ul>
+            <h3> Step - 1: Creating a VM </h3>
+            <p> First open your virtual box and then create a new virtual machine </p>
+            {% load static %}
+            <img src="{% static "blog/images/vm1.png" %}" class="img-fluid">
+            <p> Enter the name Ubuntu and type Linux will be automatically selected and version Ubuntu 64 bit or use the drop downs to select the same feature.
+              We will be selecting 2 gb memory for this virtual machine and then click on create a virtual hard disk and click create button.
+              Select "dynamically allocated" on storage on physical disk
+              <img src="{% static "blog/images/vm2.png" %}" class="img-fluid">
+            <p> Finally, you need to create a virtual disk. Select the “Create a virtual hard disk now” option and click on Create to continue. We will be setting the disk type to VDI and the size to be 10GB. </p>
+              <img src="{% static "blog/images/vm3.png" %}" class="img-fluid">
+            <p> Now, your VM is ready to go.</p>
+
+            <h3> Step - 2: Installing Ubuntu </h3>
+              <p> Now, select the newly created VM and click start. <br>
+                The VM console window will pop up along with an additional window asking you to specific what start-up disk you wish to use (Since the virtual hard disk is not yet bootable).
+                </p>
+                <img src="{% static "blog/images/os1.png" %}" class="img-fluid">
+                <p> Click on the folder icon and from your file explorer, select the ubuntu iso file that you have downloaded earlier. Once that is done, you can start the system. </p>
+                <img src="{% static "blog/images/os2.png" %}" class="img-fluid">
+                <p> Click on the install ubuntu option, after making sure your language is selected. </p>
+
+                <h5> <strong>Minimal installation and Third party software</strong> </h5>
+                <img src="{% static "blog/images/os3.png" %}" class="img-fluid">
+                <p>  Minimal install gives you a web browser and a handful of other utilities and that's it. It would be enough to carry out your lab tasks while familiarizing with the linux system.</p>
+
+                <h3> <strong>Disk layout and Installation type</strong> </h3>
+                <p class="image-space"> Now, comes the most difficult part that is the file system which is different from windows operating system. But, since we are using VM we have one quite disposable Virtual Disk to experiment with, we can simply select “Erase Disk and Install Ubuntu” option, as shown below: </p>
+                <img src="{% static "blog/images/os4.png" %}" class="img-fluid">
+                <p> It will give you a warning sign, saying that permanent changes will be made on the hard disk, click Continue to continue. </p>
+
+                <h3> Setting up User profile </h3>
+                <p class="image-space"> Enter your desired username, computer’s name and password
+                <img src="{% static "blog/images/os5.png" %}" class="img-fluid">
+                 And now we simply wait, as Ubuntu configures rest of the things for us. Once the installation finishes it will prompt you to restart the system. </p>
+
+
+
+{% endblock content_primary %}

@@ -1,0 +1,30 @@
+
+.navbar{
+  padding: 5px;
+}
+p.image-space {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.container.h3 h5 p{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.side-bar{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.table{
+  margin-top: 100px;
+}
+.blog-footer {
+  padding: 30px;
+
+  text-align: center;
+
+  border-top: .05rem solid #e5e5e5;
+
+  margin-top: 200px;
+}

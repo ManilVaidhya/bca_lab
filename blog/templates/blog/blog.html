@@ -1,0 +1,21 @@
+{% extends "blog/base.html" %}
+
+  {% block content_primary %}
+
+    <div class="jumbotron jumbotron-fluid">
+      <h1 class="display-4"> <center>Let's Connect </center> </h1>
+      <hr class="my-4">
+      <p class="lead"> We would love to help you with any details. Any information or suggestion from your part would be very helpful. Send your message or regards from the form below. </p>
+    </div>
+
+  
+
+    {% for post in posts %}
+      <h1>{{ post.title}}</h1>
+      <p> By {{ post.author }} on {{ post.date_posted }} </p>
+      <p> {{ post.content }} </p>
+    {% endfor %}
+
+
+
+  {% endblock %}

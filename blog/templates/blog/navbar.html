@@ -1,0 +1,39 @@
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#"><strong>&emsp;Learning</strong> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item px-2 active">
+        <a class="nav-link" href="{% url 'blog-home' %}">Home &nbsp;&nbsp;&nbsp; <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'blog-contact' %}">Contact Us &nbsp;&nbsp;&nbsp;</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'blog-blog' %}">Blog</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Lab files
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Lab 1</a>
+          <a class="dropdown-item" href="#">Lab 2</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Other Links</a>
+        </div>
+      </li>
+
+    </ul>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#"> Login/Register </a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
